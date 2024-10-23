@@ -94,6 +94,8 @@ history = model.fit(
 
 **ClearMemory:** Custom callback to clear the session and collect garbage to manage memory effectively.    
 
+![Image is not loading...](https://github.com/Xedygen/A-Large-Scale-Fish-Dataset-CNN-Project/blob/main/graphs.png)
+
 ## Evaluation
 
 The model's performance is evaluated using confusion matrices and classification reports.
@@ -112,6 +114,7 @@ plt.xticks(rotation=45, fontsize=12)
 plt.yticks(rotation=0, fontsize=12)
 plt.show()
 ```
+![Image is not loading...](https://github.com/Xedygen/A-Large-Scale-Fish-Dataset-CNN-Project/blob/main/confusion_matrix.png)
 
 **Classification Report**
 
@@ -129,6 +132,7 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
 ```
+![Image is not loading...](https://github.com/Xedygen/A-Large-Scale-Fish-Dataset-CNN-Project/blob/main/classification_report.png)
 
 ## Results
 
