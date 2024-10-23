@@ -1,7 +1,8 @@
 # A-Large-Scale-Fish-Dataset-CNN-Project
 This project aims to classify various fish species using a deep learning model built with TensorFlow and Keras. The dataset consists of a large-scale collection of fish images organized into different classes. The model utilizes convolutional neural networks (CNNs) to learn from the images and make predictions on unseen data.
 
-**Notebook Link:** https://www.kaggle.com/code/xedygen/global-ai-hub-project-latest-version-burak-basol
+**Notebook Link:** https://www.kaggle.com/code/xedygen/global-ai-hub-project-latest-version-burak-basol    
+
 **Dataset Link:** https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset
 
 **Instagram:** @xedygen
@@ -50,10 +51,14 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(num_classes)
 ])
 ```
-**Input Layer:** Accepts images of size 224x224 with three color channels (RGB).
-**Convolutional Layers:** Extract features from the images using filters of size 3x3.
-**MaxPooling Layers:** Downsample the feature maps to reduce spatial dimensions.
-**Flatten Layer:** Converts the 2D feature maps into a 1D vector for the dense layers.
+**Input Layer:** Accepts images of size 224x224 with three color channels (RGB).    
+
+**Convolutional Layers:** Extract features from the images using filters of size 3x3.    
+
+**MaxPooling Layers:** Downsample the feature maps to reduce spatial dimensions.    
+
+**Flatten Layer:** Converts the 2D feature maps into a 1D vector for the dense layers.    
+
 **Dense Layers:** Fully connected layers that learn to classify the features into one of the nine classes
 
 ## Training
@@ -125,7 +130,8 @@ plt.show()
 
 ## Results
 
-The trained model is saved for future use in kaggle notebook.
+The trained model is saved for future use in kaggle notebook.    
+
 **Trained Model:** https://www.kaggle.com/code/xedygen/global-ai-hub-project-latest-version-burak-basol/output
 
 ```python
