@@ -1,10 +1,10 @@
 # A-Large-Scale-Fish-Dataset-CNN-Project
 This project aims to classify various fish species using a deep learning model built with TensorFlow and Keras. The dataset consists of a large-scale collection of fish images organized into different classes. The model utilizes convolutional neural networks (CNNs) to learn from the images and make predictions on unseen data.
 
-Notebook Link: https://www.kaggle.com/code/xedygen/global-ai-hub-project-latest-version-burak-basol
-Dataset Link: 
+**Notebook Link:** https://www.kaggle.com/code/xedygen/global-ai-hub-project-latest-version-burak-basol
+**Dataset Link:** https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset
 
-Instagram: @xedygen
+**Instagram:** @xedygen
 
 ## Table of Contents
 - [Overview](#overview)
@@ -15,7 +15,6 @@ Instagram: @xedygen
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Usage](#usage)
-- [License](#license)
 
 ## Overview
 
@@ -31,9 +30,12 @@ pip install numpy pandas tensorflow matplotlib seaborn scikit-learn
 
 ## Dataset
 
-The dataset contains images of fish, and each class is represented by a folder containing images of that specific fish type.
+The dataset contains images of fish, and each class is represented by a folder containing images of that specific fish type.  
+
+**Dataset Link:** https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset
 
 ## Model Architecture
+
 The model is a simple sequential CNN architecture defined as follows:
 
 ```python
@@ -48,13 +50,14 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(num_classes)
 ])
 ```
-Input Layer: Accepts images of size 224x224 with three color channels (RGB).
-Convolutional Layers: Extract features from the images using filters of size 3x3.
-MaxPooling Layers: Downsample the feature maps to reduce spatial dimensions.
-Flatten Layer: Converts the 2D feature maps into a 1D vector for the dense layers.
-Dense Layers: Fully connected layers that learn to classify the features into one of the nine classes
+**Input Layer:** Accepts images of size 224x224 with three color channels (RGB).
+**Convolutional Layers:** Extract features from the images using filters of size 3x3.
+**MaxPooling Layers:** Downsample the feature maps to reduce spatial dimensions.
+**Flatten Layer:** Converts the 2D feature maps into a 1D vector for the dense layers.
+**Dense Layers:** Fully connected layers that learn to classify the features into one of the nine classes
 
 ## Training
+
 The model is compiled and trained using the following configuration:
 
 ```python
@@ -76,16 +79,19 @@ history = model.fit(
 )
 ```
 
-Callbacks
+**Callbacks**
 
-EarlyStopping: Stops training if the validation loss does not improve for 5 epochs.
-ReduceLROnPlateau: Reduces the learning rate if the validation loss does not improve for 3 epochs.
-ClearMemory: Custom callback to clear the session and collect garbage to manage memory effectively.
+**EarlyStopping:** Stops training if the validation loss does not improve for 5 epochs.    
+
+**ReduceLROnPlateau:** Reduces the learning rate if the validation loss does not improve for 3 epochs.    
+
+**ClearMemory:** Custom callback to clear the session and collect garbage to manage memory effectively.    
 
 ## Evaluation
+
 The model's performance is evaluated using confusion matrices and classification reports.
 
-Confusion Matrix
+**Confusion Matrix**
 ```python
 confusion_mtx = confusion_matrix(y_true, y_pred)
 
@@ -100,7 +106,8 @@ plt.yticks(rotation=0, fontsize=12)
 plt.show()
 ```
 
-Classification Report
+**Classification Report**
+
 ```python
 classification_rep = classification_report(y_true, y_pred, target_names=class_names, output_dict=True)
 
@@ -117,7 +124,9 @@ plt.show()
 ```
 
 ## Results
-The trained model is saved for future use:
+
+The trained model is saved for future use in kaggle notebook.
+**Trained Model:** https://www.kaggle.com/code/xedygen/global-ai-hub-project-latest-version-burak-basol/output
 
 ```python
 model.save('model.keras')
@@ -129,9 +138,4 @@ To use this model for predictions, load the saved model and pass in new images f
 ```python
 model = tf.keras.models.load_model('model.keras')
 predictions = model.predict(new_images)
-```
-
-## License
-```
-This project is licensed under the MIT License. See the LICENSE file for details.
 ```
