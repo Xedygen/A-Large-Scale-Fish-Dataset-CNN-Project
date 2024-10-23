@@ -61,6 +61,8 @@ model = tf.keras.Sequential([
 
 **Dense Layers:** Fully connected layers that learn to classify the features into one of the nine classes
 
+![Image is not loading.](visulization_sample.png)
+
 ## Training
 
 The model is compiled and trained using the following configuration:
