@@ -61,7 +61,7 @@ model = tf.keras.Sequential([
 
 **Dense Layers:** Fully connected layers that learn to classify the features into one of the nine classes
 
-![Image is not loading.](visulization_sample.png)
+![Image is not loading.](https://github.com/Xedygen/A-Large-Scale-Fish-Dataset-CNN-Project/blob/main/visualization_sample.png)
 
 ## Training
 
